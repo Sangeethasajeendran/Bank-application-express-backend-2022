@@ -1,0 +1,40 @@
+server creation - node js express js
+
+1.create folder for server
+2.create package.json file : command - npm init
+3.create index.js file
+4.install express :command - npm i express
+5.import express in index.js file
+6.create server application using express
+7.define port for server application
+8.to resolve http request from application
+9.to connect database with server
+   -install mongoose :command -npm i mongoose
+   -import mongoose in db.js file
+   -using mongoose define the connection string
+   -create a model to store data in db collection
+   -export model
+10.to parse json data to js using express:server-app.use(express.json())
+11.Response status code
+   -1xx - information
+   -2xx - success
+   -3xx - redirection
+   -4xx - client error
+   -5xx - server error
+12.install cors - cross origin resource shairing and define the origin inside server app
+   :-command -npm i cors
+   -import cors inside index.js
+   -using cors define origin
+13.Authentication using JWT (json Web Token) Token
+   -install jsonwebtoken : npm i jsonwebtoken
+   -using jsonwebtoken, to generate Token
+     1.import jsonwebtoken in dataservice.js file
+     2.when login successful then generate token - sign()
+     3.send token to client
+   -using jsonwebtoken,verify the token for request after login
+     1.import jsonwebtoken in index.js file
+     2.create router specific middleware to verify token- verify()
+
+14.middleware-to affect request-response cycle
+   -application specific middleware
+   -router specific middleware
